@@ -1,0 +1,50 @@
+<div class="contenedor">
+    <h1>Reserva tu Cita</h1>
+    <form id="formularioCita">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" required>
+
+        <label for="hora">Horario:</label>
+        <select id="hora" required>
+            <option value="">Selecciona un horario</option>
+            <option value="09:00">9:00 AM</option>
+            <option value="09:30">9:30 AM</option>
+            <option value="10:00">10:00 AM</option>
+            <option value="10:30">10:30 AM</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="14:00">2:00 PM</option>
+            <option value="14:30">2:30 PM</option>
+            <option value="15:00">3:00 PM</option>
+            <option value="15:30">3:30 PM</option>
+            <option value="16:00">4:00 PM</option>
+            <option value="16:30">4:30 PM</option>
+            <option value="17:00">5:00 PM</option>
+            <option value="17:30">5:30 PM</option>
+            <option value="18:00">6:00 PM</option>
+            <option value="18:30">6:30 PM</option>
+        </select>
+
+        <label for="servicio">Tipo de servicio:</label>
+        <select id="servicio" required>
+            <option value="corte">Corte</option>
+            <option value="corte_con_barba">Corte con barba</option>
+            <option value="solo_barba">Solo barba</option>
+            <option value="marcada_corte">Solo marcada de corte</option>
+        </select>
+
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" placeholder="Ejemplo: Juan Pérez" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" placeholder="Ejemplo: 555-123-4567" required>
+
+        <button type="submit">Reservar</button>
+    </form>
+    <div id="mensaje"></div>
+</div>
+
+<!-- SECCIÓN DONDE SE MOSTRARÁN LOS TURNOS AGENDADOS -->
+<div class="contenedor">
+    <h2>Turnos Agendados</h2>
+    <ul id="listaTurnos"></ul>
+</div>
